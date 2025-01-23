@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+input {
+    background-color: #424242;
+    color: #e0e0e0;
+    border: 1px solid #424242;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.result-card {
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.champion-card {
+    background: #2e2e2e;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.champion-card h3, .champion-card p {
+    color: #ffffff;
+}
+
+.match-history {
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%;
+}
+
+.match-entry {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #424242;
+}
+
+.match-entry:last-child {
+    border-bottom: none;
+}
+
+.match-details img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.match-info span, .match-result {
+    color: #b0b0b0;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
