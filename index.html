@@ -309,7 +309,7 @@
             const encodedSummonerId = encodeURIComponent(summonerId);
 
             // Fetch Loss Streak
-            fetch(`http://77.68.66.130:5000/api/loss_streak`, {
+            fetch(`https://your_domain/api/loss_streak`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -335,7 +335,7 @@
                 });
 
             // Fetch Top 5 Mastery
-            fetch(`http://77.68.66.130:5000/api/mastery`, {
+            fetch(`https://your_domain/api/mastery`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -361,7 +361,7 @@
                 });
 
             // Fetch Match History and Win Rate
-            fetch(`http://77.68.66.130:5000/api/match_history`, {
+            fetch(`https://your_domain/api/match_history`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
