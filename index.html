@@ -306,14 +306,15 @@
 
         document.getElementById('get-all-stats-btn').addEventListener('click', () => {
             const summonerId = document.getElementById('summoner-id').value;
+            const encodedSummonerId = encodeURIComponent(summonerId);
 
             // Fetch Loss Streak
-            fetch('http://77.68.66.130:5000/api/loss_streak', {
+            fetch(`http://77.68.66.130:5000/api/loss_streak`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ riot_id: summonerId })
+                body: JSON.stringify({ riot_id: encodedSummonerId })
             })
                 .then(response => response.json())
                 .then(data => {
@@ -334,12 +335,12 @@
                 });
 
             // Fetch Top 5 Mastery
-            fetch('http://77.68.66.130:5000/api/mastery', {
+            fetch(`http://77.68.66.130:5000/api/mastery`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ riot_id: summonerId })
+                body: JSON.stringify({ riot_id: encodedSummonerId })
             })
                 .then(response => response.json())
                 .then(data => {
@@ -360,12 +361,12 @@
                 });
 
             // Fetch Match History and Win Rate
-            fetch('http://77.68.66.130:5000/api/match_history', {
+            fetch(`http://77.68.66.130:5000/api/match_history`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ riot_id: summonerId })
+                body: JSON.stringify({ riot_id: encodedSummonerId })
             })
                 .then(response => response.json())
                 .then(data => {
