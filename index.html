@@ -309,12 +309,12 @@
             const encodedSummonerId = encodeURIComponent(summonerId);
 
             // Fetch Loss Streak
-            fetch(`https://your_domain/api/loss_streak`, {
+            fetch(`https://sugarwugar.online/api/loss_streak`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ riot_id: encodedSummonerId })
+                body: JSON.stringify({ riot_id: summonerId })
             })
                 .then(response => response.json())
                 .then(data => {
@@ -335,12 +335,12 @@
                 });
 
             // Fetch Top 5 Mastery
-            fetch(`https://your_domain/api/mastery`, {
+            fetch(`https://sugarwugar.online/api/mastery`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ riot_id: encodedSummonerId })
+                body: JSON.stringify({ riot_id: summonerId })
             })
                 .then(response => response.json())
                 .then(data => {
@@ -361,12 +361,12 @@
                 });
 
             // Fetch Match History and Win Rate
-            fetch(`https://your_domain/api/match_history`, {
+            fetch(`https://sugarwugar.online/api/match_history`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ riot_id: encodedSummonerId })
+                body: JSON.stringify({ riot_id: summonerId })
             })
                 .then(response => response.json())
                 .then(data => {
